@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="parallelogram"></div>
+
+    <section>
+        <form action="#" method="POST">
+            <h1>Criar sua conta</h1>
+            <fieldset>
+                <div class="container">
+                    <input type="text" required name="name" autofocus id="name">
+                    <label for="name">Nome</label>
+                </div>
+                <div class="container">
+                    <input type="text" required name="sobrenome" id="sobrenome">
+                    <label for="sobrenome">Sobrenome</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="email" required name="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="password" required name="password" id="password">
+                    <label for="password">Senha</label>
+                </div>
+                <div class="container">
+                    <input type="password" required name="confirm" id="confirm">
+                    <label for="confirm">Repita a Senha</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div id="check">
+                    <input type="checkbox" required name="accept" id="term">
+                    <label for="term">Aceitar os termos de uso</label>
+                </div>
+                <button>Criar Conta</button>
+            </fieldset>
+
+            <a href="#">Ler termos de uso</a>
+        </form>
+    </section>
+</body>
+</html>
