@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>Formulário</h1>
+
+        <section class="container">
+            <input type="text" id="name" placeholder="Digite seu nome aqui">
+            <label for="name">Nome: </label>
+        </section>
+
+        <section class="container">
+            <input type="password" id="senha" placeholder="Digite sua senha aqui">
+            <label for="senha">Senha: </label>
+        </section>
+
+        <section class="container">
+            <input type="email" id="email" placeholder="Digite seu e-mail aqui">
+            <label for="email">E-mail: </label>
+        </section>
+
+        <textarea class="container" name="text" id="desc" name="desc" cols="30" rows="10" placeholder="Fale um pouco sobre você" ></textarea>
+
+        <section class="sex-select">
+            <div> 
+                <input type="radio" name="sexo" id="m" value="m">
+                <label for="m">Masculino</label>
+            </div>
+
+            <div> 
+                <input type="radio" name="sexo" id="f" value="f">
+                <label for="f">Feminino</label>
+            </div>
+
+            <div> 
+                <input type="radio" name="sexo" id="o" value="o">
+                <label for="o">Outro</label>
+            </div>
+        </section>
+
+        <section class="conhecimentos">
+            <div>
+                <input type="checkbox" name="conhecimento" id="html" value="html">
+                <label for="html">HTML5</label>
+            </div>
+            <div>
+                <input type="checkbox" name="conhecimento" id="css" value="css">
+                <label for="css">CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="conhecimento" id="js" value="js">
+                <label for="js">JAVASCRIPT</label>
+            </div>
+            <div>
+                <input type="checkbox" name="conhecimento" id="php" value="php">
+                <label for="php">PHP</label>
+            </div>
+        </section>
+
+        <input type="button" value="Enviar">
+
+    </form>
+</body>
+</html>
