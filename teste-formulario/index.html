@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>freeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form class="form-group" autocomplete="on" required>
+        <div class="form-group">
+            <label for="namer-form">Nome</label> <br>
+            <input type="text" name="name" id="name-form" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email-form">Email</label> <br>
+            <input type="email" name="email" id="email-form" placeholder="Digite seu Email" required>
+        </div>
+        <div class="form-group">
+            <label for="age-form">Idade</label> <br>
+            <input type="number" name="age" id="age-form" placeholder="Idade" required max="99" min="0">
+        </div>
+        <div class="form-group">
+            <label for="current-role">Seleciona a opção que melhor descreve seu trabalho atual</label> <br>
+            <select name="current-role" id="current-role" required>
+                <option value="none" selected disabled>Selecione ocupação atual</option>
+                <option value="Student">Estudante</option>
+                <option value="full-job">Trabalho Integral</option>
+                <option value="teacher">Professor</option>
+                <option value="prefer-not">Prefiro não dizer</option>
+                <option value="other">Outro</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Recomendaria para um amigo?</p>
+            <input type="radio" name="recommend" id="definitely" value="Sim">
+            <label for="definitely">Sim</label> <br>
+            <input type="radio" name="recommend" id="maybe" value="Talvez">
+            <label for="maybe">Talvez</label> <br>
+            <input type="radio" name="recommend" id="no" value="Não">
+            <label for="no">Não</label>
+        </div>
+        <div class="form-group">
+            <label for="favorite">Seleciona a opção que melhor descreve seu trabalho atual</label> <br>
+            <select name="favorite" id="favorite" required>
+                <option value="none" selected disabled>Selecione uma opção</option>
+                <option value="Student">Desafios</option>
+                <option value="full-job">Comunidade</option>
+                <option value="teacher">Projetos</option>
+                <option value="prefer-not">Código Aberto</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>O que você gostaria que fosse adicionado?<small>(Selecione quantos quiser)</small></p>
+            <input type="checkbox" name="front-end" id="front-end" value="Projetos Front-End">
+            <label for="front-end">Projetos Front-End</label> <br>
+            <input type="checkbox" name="back-end" id="back-end" value="Projetos Back-End">
+            <label for="back-end">Projetos Back-End</label> <br>
+            <input type="checkbox" name="data" id="data" value="Visualizador de Data">
+            <label for="data">Visualizador de Data</label> <br>
+            <input type="checkbox" name="challenge" id="challenge" value="Desafios">
+            <label for="challenge">Desafios</label> <br>
+            <input type="checkbox" name="open-source" id="open-source" value="Código Aberto">
+            <label for="open-source">Comunidade Código Aberto</label> <br>
+            <input type="checkbox" name="gitter" id="gitter" value="Ajuda Gitter">
+            <label for="gitter">Salas de Ajuda Gitter</label> <br>
+            <input type="checkbox" name="videos" id="videos" value="Videos">
+            <label for="videos">Vídeos</label> <br>
+            <input type="checkbox" name="city" id="city" value="Encontros na Cidade">
+            <label for="city">Encontros na Cidade</label> <br>
+            <input type="checkbox" name="wiki" id="wiki" value="Wiki">
+            <label for="wiki">Wiki</label> <br>
+            <input type="checkbox" name="forum" id="forum" value="Forum">
+            <label for="forum">Fórum</label> <br>
+            <input type="checkbox" name="courses" id="courses" value="Courses">
+            <label for="courses">Cursos Adicionais</label> <br>
+        </div>
+        <div class="form-group">
+            <label for="comment">Algum comentário ou sugestão?</label> <br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="form-group">
+    </form>
+</body>
+</html>
